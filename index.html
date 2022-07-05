@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <form class="w-75 mx-auto">
+    <!-- <form class="w-75 mx-auto">
         <p class="mt-3">名前</p>
         <div>
             <input class="form-control w-100 mt-1" name="name" placeholder="" required>
@@ -31,7 +31,46 @@
             <input class="form-control w-100 mt-1" name="sukuwat" required>
         </div>
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
+    </form> -->
+
+
+    <form method="POST" action="https://8622-2405-6587-a0-900-504-1eee-2618-a1b8.ngrok.io/foo">
+        <div class="mt-3">
+            <p>性別を選択してください<br>
+                <input type="radio" name="sex" value="男性" required>男性<br>
+                <input type="radio" name="sex" value="女性">女性<br>
+                <input type="radio" name="sex" value="その他">その他<br>
+                <input type="radio" name="sex" value="回答しない">回答しない<br>
+            </p>
+        </div>
+        <div class="mt-3">
+            <p>生まれた年を入力してください（西暦）<br>
+                <input type="text" name="birthYear" placeholder="（例）1970" required><br>
+            </p>
+        </div>
+        <div class="mt-3">
+            <p>投資経験を教えてください<br>
+                <input type="radio" name="experience" value="0" required>なし<br>
+                <input type="radio" name="experience" value="2">0年以上～2年未満<br>
+                <input type="radio" name="experience" value="5">2年以上～5年未満<br>
+                <input type="radio" name="experience" value="10">5年以上<br>
+            </p>
+        </div>
+
+        <div class="mt-3">
+            <input type="radio" name="experience" value="0" required>なし
+              個人情報の利用目的について確認しました。<br>
+              <a href="https://www.hirogin.co.jp/rules/kojin_rimo_s.html" target="_blank" rel="noopener noreferrer" class="text-decoration-underline text-dark">個人情報の利用目的はこちら</a>
+        </div>
+        <div class="text-center pt-4 col-md-6 offset-md-3">
+            <button type="submit" class="btn btn-primary">送信</button>
+        </div>
     </form>
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
